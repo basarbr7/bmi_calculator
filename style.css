@@ -1,0 +1,111 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    outline: 0;
+}
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main{
+    background: rgb(200, 199, 197);
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center;
+    justify-content: center; */
+    gap: 25px;
+}
+.main h2{
+    text-align: center;
+}
+.bmi_gender{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.bmi_gender .gender_name{
+    position: absolute;
+    top: 100%;
+    right: 20%;
+}
+.bmi_gender label{
+    font-size: 18px;
+}
+.bmi_gender select{
+    padding: 2px 0 4px 4px;
+    font-size: 16px;
+    background: rgb(238, 238, 238);
+    border: 1px solid black;
+    color: rgb(0, 0, 0);
+}
+.bmi_gender select option{
+    border: 1px solid black;
+    
+}
+.weight_feild{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.weight_feild label{
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+.weight_feild .weight_input{
+    position: relative;
+}
+.weight_feild .weight_input .weight{
+    padding: 7px;
+    font-size: 14px;
+}
+.weight_feild .weight_input .Weight_error{
+    position: absolute;
+    bottom: -18px;
+    left: 0px;
+    color: red;
+}
+.height_feild{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.height_feild label{
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+.height_feild .height_input{
+    position: relative;
+}
+.height_feild .height_input .height{
+    padding: 7px;
+    font-size: 14px;
+}
+.height_feild .height_input .height_error{
+    position: absolute;
+    bottom: -18px;
+    left: 0px;
+    color: red;
+}
+.main .calculate {
+    padding: 10px 30px;
+    display: block;
+    margin: 10px auto 0;
+}
+.main .result_info {
+    display: flex;
+    gap: 10px;
+}
+.main .Catagory_info {
+    display: flex;
+    gap: 10px;
+    margin-top: -10px;
+}
