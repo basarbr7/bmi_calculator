@@ -74,12 +74,12 @@ function forMale(total){
         suggest.innerHTML = "Underweight";
         suggest.style.color = "#FF8000";
     }
-    else if(total>=18.4 && total<=24.9){
+    else if(total>=18.4 && total<25){
         suggest.innerHTML = "Normal";
         suggest.style.color = "#347928";
 
     }
-    else if(total>=25 && total<=29.9){
+    else if(total>=25 && total<30){
         suggest.innerHTML = "Overweight";
         suggest.style.color = "#FF6500";
     }
@@ -143,9 +143,6 @@ calculate.addEventListener("click", function () {
     }
     else if(gender.value === "female"){
         sum();
-    }
-    else{
-        
     }
 });
 
